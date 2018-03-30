@@ -1,0 +1,20 @@
+{
+  "name": "BrainySoft/ConfigData",
+  "description": "Package ConfigData",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BrainySoft\\ConfigData\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "~5",
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
