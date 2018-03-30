@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Illuminate\Support\Facades\Config;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 use BrainySoft\Config\Models\Mfo;
 
@@ -25,8 +26,6 @@ class SettingsTest extends TestCase
 
     public function setUp() {
         parent::setUp();
-        $this->createApplication();
-//        $this->runDatabaseMigrations();
         $this->artisan('db:seed');
     }
 
@@ -42,8 +41,8 @@ class SettingsTest extends TestCase
     /**
      *
      */
-    public function testSettingHasCustomer() {
-
-    }
+//    public function testSettingHasCustomer() {
+//
+//    }
 
 }
