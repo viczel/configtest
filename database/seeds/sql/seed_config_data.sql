@@ -1,6 +1,6 @@
-PRAGMA synchronous = ON;
-PRAGMA journal_mode = MEMORY;
-BEGIN TRANSACTION;
+-- PRAGMA synchronous = ON;
+-- PRAGMA journal_mode = MEMORY;
+-- BEGIN TRANSACTION;
 INSERT INTO `configs` VALUES (1,1,'IP','"172.16.1.50"','2018-03-30 06:32:31','2018-03-30 06:32:31');
 INSERT INTO `configs` VALUES (2,1,'port','8082','2018-03-30 06:32:31','2018-03-30 06:32:31');
 INSERT INTO `configs` VALUES (3,1,'gate','"http:\/\/gate.brainysoft.ru"','2018-03-30 06:32:31','2018-03-30 06:32:31');
@@ -3083,4 +3083,4 @@ INSERT INTO `setting_names` VALUES (232,'equifax_version','equifax_version','','
 INSERT INTO `setting_names` VALUES (233,'okb_archive_command','okb_archive_command','','string','""','2018-03-30 06:34:16','2018-03-30 06:34:16');
 INSERT INTO `setting_names` VALUES (234,'luxbase_countdata','luxbase_countdata','','string','""','2018-03-30 06:34:23','2018-03-30 06:34:23');
 INSERT INTO `setting_names` VALUES (235,'luxbase_todays','luxbase_todays','','string','""','2018-03-30 06:34:23','2018-03-30 06:34:23');
-END TRANSACTION;
+-- END TRANSACTION;

@@ -17,7 +17,7 @@ class CreateConfigsTable extends Migration
             $table->increments('id');
             $table->integer('mfo_id')->unsigned();
             $table->string('key');
-            $table->json('value');
+            $table->text('value');
             $table->timestamps();
 
             $table->index('mfo_id', 'configs_mfo_id');

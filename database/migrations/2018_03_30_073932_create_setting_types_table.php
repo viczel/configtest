@@ -15,12 +15,14 @@ class CreateSettingTypesTable extends Migration
     {
         Schema::create('setting_names', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->index();
+            $table->string('name');
             $table->string('title');
             $table->string('description')->nullable();
             $table->string('cast');
-            $table->json('initial');
+            $table->text('initial');
             $table->timestamps();
+
+            //$table->index('name', 'setting_name');
         });
     }
 
