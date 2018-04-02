@@ -37,4 +37,10 @@ class Mfo extends Model
         return $query;
     }
 
+    /**
+     * @return string
+     */
+    public function getSettingPageUrl() {
+        return "/testblock/customers/{$this->name}";
+    }
 }

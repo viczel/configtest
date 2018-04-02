@@ -9,7 +9,7 @@
 
                     <div class="card-body">
                         @foreach($mfoList As $mfo)
-                            <h4>{{$mfo->title}} ({{$mfo->name}})</h4>
+                            <h4><a href="{{$mfo->getSettingPageUrl()}}">{{$mfo->title}}</a> ({{$mfo->name}})</h4>
                             <hr />
                         @endforeach
                     </div>
