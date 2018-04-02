@@ -2,7 +2,9 @@
 
 use BrainySoft\Config\Http\Controllers\ConfigController;
 
-Route::get('exportoldconfig', ConfigController::class . "@export");
-Route::get('testblock/{customer_key}/testkeys', ConfigController::class . "@testkeys");
+Route::get('testblock/customers', ConfigController::class . "@customerList");
+Route::get('testblock/customers/{customer_key}', ConfigController::class . "@customerSettings");
+
+//Route::get('exportoldconfig', ConfigController::class . "@export");
 
 //Route::resource('config', ConfigController::class);

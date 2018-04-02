@@ -42,6 +42,11 @@ class ConfigServiceProvider extends ServiceProvider
                 copy($seedsSrc, $seedsDest);
             }
         }
+
+        $this->loadViewsFrom(
+            __DIR__.'/resources/views', 'configs'
+        );
+
 //        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 

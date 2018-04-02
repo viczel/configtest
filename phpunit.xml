@@ -16,6 +16,7 @@
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
             <directory suffix="Test.php">./packages/Vic/Config/tests/Unit</directory>
+            <directory suffix="Test.php">./packages/Vic/Config/tests/Feature</directory>
         </testsuite>
     </testsuites>
     <filter>

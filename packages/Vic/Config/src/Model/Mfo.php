@@ -31,9 +31,9 @@ class Mfo extends Model
     public function settings(): HasMany // $list = []
     {
         $query = $this->hasMany(Configs::class, 'mfo_id');
-        if( !empty($list) ) {
-            $query->filtered($list);
-        }
+        //if( !empty($list) ) {
+        //    $query->filtered($list);
+        //}
         return $query;
     }
 

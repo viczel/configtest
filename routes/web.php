@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::resource('current', CurrentController::class);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
